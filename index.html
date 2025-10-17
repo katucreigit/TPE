@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "stylesheet" href= "css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+  <title>Santa Burger - Inicio</title>
+</head>
+<body>
+  <header>
+    <img src="img/Logo.png" alt="Logo" class="logo">
+    <button class="hamburger-menu"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+      &#9776; <!-- Icono de hamburguesa -->
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="locales.html">Locales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Santa Burger</h1>
+      <h2 class="inicioh2">-Donde cada bocado es un milagro-</h2>
+      <div class="videoInicio-container">
+        <video src="img/videoInicio2.mp4" controls autoplay loop>
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+      
+    </section>
+    <section>
+      <h2>Más populares</h2>
+        <div class="container-cardsMp">
+          <div class="cardMp active">
+            <img src="img/cheeseBurger.png" alt="Cheese Burger">
+            <h3>Cheese burger</h3>
+            <p>$12.000</p>
+            <a href="menu.html">Ver más</a>
+          </div>
+          <div class="cardMp">
+            <img src="img/cheddarBacon.png" alt="Cheddar y Bacon Burger">
+            <h3>Cheddar y bacon</h3>
+            <p>$13.000</p>
+            <a href="menu.html">Ver más</a>
+          </div>
+          <div class="cardMp">
+            <img src="img/sweetOnion.png" alt="Sweet Onion Burger">
+            <h3>Sweet Onion</h3>
+            <p>$12.000</p>
+            <a href="menu.html">Ver más</a>
+          </div>
+        </div>
+    </section>
+    <section class="delivery-section">
+      <div class="delivery">
+        <h2>PEDÍ AHORA</h2>
+        <p class="texto1">La mejor hamburguesa está a solo un click de distancia. ¡Es hora de disfrutar de Santa Burger!</p>
+        <p class="texto2">Pedila y te llevamos una experiencia deliciosa directamente a tu puerta.</p>
+        <div class="iconos">
+          <img src="img/pyIcono.png" alt="">
+          <img src="img/rapIcono.png" alt="">
+        </div>
+      </div>
+      <img class="imgdelivery" src="img/imagenPediAhora.jpeg" alt="Imágen de hamburguesa">
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>&copy; 2025 Santa Burger. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="js/base.js"></script>
+</body>
+</html>

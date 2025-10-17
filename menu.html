@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "stylesheet" href= "css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+  <title>Santa Burger - Menú</title>
+</head>
+<body>
+  <header>
+    <img src="img/Logo.png" alt="Logo" class="logo">
+    <button class="hamburger-menu"
+      aria-label="Abrir menú de navegación"
+      aria-expanded="false"
+      aria-controls="main-nav"
+    >
+    &#9776; <!-- Icono de hamburguesa -->
+    </button>
+    <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="locales.html">Locales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Nuestro menú</h2>
+    <div class="iconos-menu">
+      <a href="menu.html">
+        <img src="img/burgerIcon.png" alt="Icono de hamburguesa">
+      </a>
+      <a href="submenu/acompanamiento.html">
+        <img src="img/acompIcon.png" alt="Icono de Acompañamientos">
+      </a>
+      <a href="submenu/extras.html">
+        <img src="img/extraIcon.png" alt="Icono de Extras">
+      </a>
+      <a href="submenu/bebidas.htmls">
+        <img src="img/bebidaIcon.png" alt="Icono de Bebidas">
+      </a>
+    </div>
+    <div class="container-cards">
+      <div class="card">
+        <img src="img/cheeseBurger.png" alt="Cheese Burger">
+        <img class="icono-burger" src="img/carneIcon.png" alt="Icono carne vacuna">
+        <h3>Cheese Burger</h3>
+        <p> $12.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de carne con doble cheddar y mayonesa.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/cheddarBacon.png" alt="Cheddar y Bacon">
+        <img class="icono-burger" src="img/carneIcon.png" alt="Icono carne vacuna">
+        <h3>Cheddar y Bacon</h3>
+        <p> $13.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de carne con bacon ahumado y crujiente, cheddar, y mayonesa.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/sweetOnion.png" alt="Sweet Onion">
+        <img class="icono-burger" src="img/carneIcon.png" alt="Icono carne vacuna">
+        <h3>Sweet Onion</h3>
+        <p> $12.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de carne con cebolla caramelizada dulce y suave, mostaza y salsa de cheddar">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/crispyHeaven.png" alt="Crispy Heaven">
+        <img class="icono-burger" src="img/polloIcon.png" alt="Icono pollo">
+        <h3>Crispy Heaven</h3>
+        <p> $14.000</p>
+        <button  class="ver-mas" data-descripcion="Crujiente pollo frito, con cebolla, cheddar y salsa Santa burger.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/classicBurger.png" alt="Classic Burger">
+        <img class="icono-burger" src="img/carneIcon.png" alt="Icono carne vacuna">
+        <h3>Classic Burger</h3>
+        <p> $13.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de carne con cebolla, lechuga, tomate, cheddar y ketchup.
+">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/classicSupreme.png" alt="Classic Supreme">
+        <img class="icono-burger" src="img/polloIcon.png" alt="Icono pollo">
+        <h3>Classic Supreme</h3>
+        <p> $13.000</p>
+        <button  class="ver-mas" data-descripcion="Medallon de pollo con cebolla, lechuga, tomate, cheddar y ketchup.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/notClassicBurger.png" alt="Not Classic Burger">
+        <img class="icono-burger" src="img/vegIcon.png" alt="Icono vegetariano">
+        <h3>Not Classic Burger</h3>
+        <p> $14.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de carne vegetariana con cebolla, lechuga, tomate, cheddar y ketchup.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/superSupreme.png" alt="Super Supreme">
+        <img class="icono-burger" src="img/polloIcon.png" alt="Icono pollo">
+        <h3>Super Supreme</h3>
+        <p> $15.000</p>
+        <button  class="ver-mas" data-descripcion="Doble medallon de pollo, con lechuga, bacon, cheddar, ketchup y salsa Santa burger.">Ver más</button>
+      </div> 
+      <div class="card">
+        <img src="img/mexiBurger.png" alt="Mexi Burger">
+        <img class="icono-burger" src="img/carneIcon.png" alt="Icono carne vacuna">
+        <h3>Mexi Burger</h3>
+        <p> $15.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de carne con guacamole, lechuga, nachos crujientes y salsa picante.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/santaBurger.png" alt="Santa Burger">
+        <img class="icono-burger" src="img/carneIcon.png" alt="Icono carne vacuna">
+        <h3>Santa Burger</h3>
+        <p> $15.000</p>
+        <button  class="ver-mas" data-descripcion="Doble hamburguesa de carne con huevo frito, aros de cebolla, cheddar, bacon y lechuga.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/fuegoArgentino.png" alt="Fuego Argentino">
+        <img class="icono-burger" src="img/carneIcon.png" alt="Icono carne vacuna">
+        <h3>Fuego Argentino</h3>
+        <p> $15.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de carne a la parrila, con verduras asadas">Ver más</button>
+      </div> 
+      <div class="card">
+        <img src="img/veggieCompleta.png" alt="Veggie Completa">
+        <img class="icono-burger" src="img/vegIcon.png" alt="Icono vegetariano">
+        <h3>Veggie Completa</h3>
+        <p> $14.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa veggie, con hummus, cebolla, lechuga.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/pinkVeggie.png" alt="Pink Veggie">
+        <img class="icono-burger" src="img/vegIcon.png" alt="Icono vegetariano">
+        <h3>Pink Veggie</h3>
+        <p> $13.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de remolacha, con repollo, tomate y lechuga.">Ver más</button>
+      </div>
+      <div class="card">
+        <img src="img/greenveggie.png" alt="Green Veggie">
+        <img class="icono-burger" src="img/vegIcon.png" alt="Icono vegetariano">
+        <h3>Green Veggie</h3>
+        <p> $13.000</p>
+        <button  class="ver-mas" data-descripcion="Hamburguesa de espinaca, con queso veggie, rucula y tomate.">Ver más</button>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-contenido">
+        <span class="cerrar" id="cerrar">&times;</span>
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-descripcion"></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <p>&copy; 2025 Santa Burger. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="js/base.js"></script>
+</body>
+</html>
+
+
+
