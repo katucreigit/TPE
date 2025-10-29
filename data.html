@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "stylesheet" href= "css/style.css">
+  <link rel= "stylesheet" href= "css/data.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+  <title>Santa Burger - Hacer pedido</title>
+</head>
+<body>
+  <header>
+    <img src="img/Logo.png" alt="Logo" class="logo">
+    <button class="hamburger-menu"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+      &#9776; <!-- Icono de hamburguesa -->
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="locales.html">Locales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="data.html">Hacer pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="data-container">
+      <div class="form-section">
+        <h2>Hace tu pedido!</h2>
+        <form id="data-form">
+          <label for="item-burger">Hamburguesa:</label>
+          <input type="text" id="item-burger" placeholder="Ej: Cheese burger" required>
+          <label for="item-value">Valor:</label>
+          <input type="number" id="item-value" placeholder="Ej. 12.000" required>
+          <label for="item-side">Acompañamiento:</label>
+          <input type="text" id="item-side" placeholder="Ej. Papas fritas" required>
+          <label for="item-drink">Bebida:</label>
+          <input type="text" id="item-drink" placeholder="Ej: Pepsi" required>
+          <button type="submit" id="add-item-btn" class="add-btn">
+            Agregar Elemento
+          </button>
+          <button type="submit" id="update-item-btn" class="update-btn">
+            Actualizar Elemento
+          </button>
+          <button type="reset" class="cancel-btn">
+            Cancelar
+          </button>
+        </form>
+        <div id="status-message" class="hidden">Mensaje a mostrar</div>
+      </div>
+
+      <div class="table-section">
+        <h2>Pedido</h2>
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Hamburguesa</th>
+              <th>Valor</th>
+              <th>Acompañamiento</th>
+              <th>Bebida</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p>&copy; 2025 Mi Sitio Genérico. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <h3>¿Está seguro de que desea eliminar este elemento?</h3>
+      <div class="modal-buttons">
+        <button class="confirm-btn">Sí, eliminar</button>
+        <button class="cancel-btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/menuMobile.js"></script>
+  <script src="js/data.js"></script>
+</body>
+</html>
