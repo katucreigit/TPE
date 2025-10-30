@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     data.forEach( ( item , index ) => {
       const row = document.createElement('tr') ;
       item.id = index + 1 ;
-      [ 'id', 'burger', 'value' , 'side', 'drink'].forEach( attr => {
+      [ 'id', 'burger' , 'side', 'drink', 'value'].forEach( attr => {
         const td = document.createElement('td') ;
         td.textContent=item[attr] ;
         row.appendChild( td ) ;
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const itemData = { burger,value, side, drink } ;
+    const itemData = { burger , side, drink, value } ;
 
     if( editingItemId ) {
       items[editingItemId-1] = itemData ;

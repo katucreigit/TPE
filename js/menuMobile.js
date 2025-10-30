@@ -13,7 +13,7 @@ document.addEventListener( 'DOMContentLoaded' , () => {
     if( !mainNav.contains( event.target ) &&
         !hamburgerButton.contains( event.target ) &&
         mainNav.classList.contains( 'nav-open' ) ) {
-        hamburgerButton.setAttribute( 'aria-expanded' , 'false' ) ;x
+        hamburgerButton.setAttribute( 'aria-expanded' , 'false' ) ;
         mainNav.classList.remove( 'nav-open' ) ;
     }
     } ) ;
